@@ -59,8 +59,13 @@ body {
 
 .nav-list li a:hover { color: #8c52ff; }
 
-/* Lógica Hamburguesa (Checkbox Hack) */
-.menu-checkbox { display: none; }
+/* FIX: OCULTAR CHECKBOX FANTASMA */
+.menu-checkbox { 
+    display: none !important; /* !important asegura que Git no lo muestre */
+    visibility: hidden;
+    position: absolute;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -206,7 +211,7 @@ body {
 .cert-content h3 { font-size: 1.1rem; margin-bottom: 15px; }
 .cert-content p { font-size: 0.9rem; color: #d1d1d1; line-height: 1.6; }
 
-/* 7. PROYECTOS (SLIDER) */
+/* 7. PROYECTOS - FIX SLIDER */
 .projects-section {
     padding: 80px 20px;
     background-image: url('../assets/imagenes/fondo-2.png');
@@ -216,24 +221,36 @@ body {
 
 .projects-title { font-family: 'Press Start 2P', cursive; font-size: 2.2rem; margin-bottom: 60px; }
 .slider-wrapper { position: relative; max-width: 1000px; margin: 0 auto; }
-input[type="radio"] { display: none; }
-.slider-container { position: relative; overflow: hidden; min-height: 600px; }
+
+.slider-container { 
+    position: relative; 
+    overflow: hidden; 
+    min-height: 600px; /* IMPORTANTE: Mantiene el alto en Git */
+}
 
 .project-slide {
     width: 100%;
     position: absolute;
-    top: 0; left: 0;
+    top: 0; 
+    left: 0;
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
     transition: 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    visibility: hidden; /* Evita que se amontonen */
 }
 
+/* Lógica de visibilidad corregida para Git */
 #slide1:checked ~ .slider-container .slide-1,
-#slide2:checked ~ .slider-container .slide-2 {
-    opacity: 1; transform: scale(1); position: relative; z-index: 1;
+#slide2:checked ~ .slider-container .slide-2,
+#slide3:checked ~ .slider-container .slide-3 {
+    opacity: 1; 
+    transform: scale(1); 
+    visibility: visible;
+    position: relative; /* Toma el espacio del contenedor activo */
+    z-index: 1;
 }
 
 .project-image img {
@@ -257,7 +274,7 @@ input[type="radio"] { display: none; }
 /* 8. CONTACTO */
 .contact-section {
     padding: 80px 20px;
-    background-image: url('fondo-1.png');
+    background-image: url('../assets/imagenes/fondo-1.png'); /* Ruta corregida */
     background-size: cover;
     text-align: center;
 }
@@ -280,7 +297,7 @@ input[type="radio"] { display: none; }
 /* 9. FOOTER */
 .main-footer {
     padding: 40px 20px;
-    background-image: url('fondo-1.png');
+    background-image: url('../assets/imagenes/fondo-1.png'); /* Ruta corregida */
     background-size: cover;
     border-top: 1px solid rgba(140, 82, 255, 0.3);
 }
@@ -288,28 +305,33 @@ input[type="radio"] { display: none; }
 .social-links { display: flex; gap: 30px; list-style: none; }
 .social-links a { color: white; text-decoration: none; font-weight: 600; }
 
-/* 10. RESPONSIVE FINAL (MOBILE FIRST) */
+/* 10. RESPONSIVE FINAL */
 @media (max-width: 768px) {
-    /* Menú Hamburguesa */
     .hamburger { display: flex; }
+    
     .nav-list {
         display: none;
         position: absolute;
-        top: 100%; left: 0; width: 100%;
+        top: 100%; 
+        left: 0; 
+        width: 100%;
         background: #0a0412;
         flex-direction: column;
         padding: 20px;
         text-align: center;
         border-bottom: 1px solid #8c52ff;
+        z-index: 1001;
     }
-    .menu-checkbox:checked ~ .nav-list { display: flex; }
 
-    /* Hero */
+    /* Mostrar menú cuando el checkbox está activo */
+    #menu-toggle:checked ~ .nav-list { 
+        display: flex !important; 
+    }
+
     .hero-section .container { flex-direction: column; text-align: center; }
     .hero-section .pixel-title { font-size: 1.6rem; }
     .hero-section .image-box img { max-width: 280px; }
 
-    /* Tarjetas 2x2 */
     .skills-container, .certs-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -317,20 +339,16 @@ input[type="radio"] { display: none; }
     }
     
     .skills-title, .certs-title, .projects-title { font-size: 1.4rem; }
-    
-    .cert-card { width: 100%; }
+    .cert-card { width: 100%; min-height: auto; }
 
-    /* Slider Arrows */
+    /* Ajuste Flechas Slider en móvil */
     .arrow.prev { left: 10px; }
     .arrow.next { right: 10px; }
 }
 
 @media (max-width: 600px) {
-    /* Contacto y Footer */
     .form-grid { grid-template-columns: 1fr; }
     .full-width { grid-column: span 1; }
     .footer-container { flex-direction: column; gap: 20px; }
-    
-    /* 1 columna para pantallas muy pequeñas */
     .skills-container, .certs-container { grid-template-columns: 1fr; }
 }
