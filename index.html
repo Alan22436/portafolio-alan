@@ -16,24 +16,30 @@
 <body>
 
    <header class="main-header">
-    <nav>
-        <ul class="nav-list">
-            <li class="nav-brand">
-                <a href="#">Alan Avila</a>
-            </li>
-            
-            <li><a href="#sobre-mi">Sobre mi</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#certificaciones">Certificaciones</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <div class="nav-brand">
+        <a href="#">Alan Avila</a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-list">
+        <li><a href="#sobre-mi">Sobre mi</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#certificaciones">certificaciones</a></li>
+        <li><a href="#contacto">contacto</a></li>
+    </ul>
 </header>
 
     <main>
-        <section>
     
-    <section class="hero-section">
+    
+    <section class="hero-section" id="sobre-mi">
     <div class="container">
         <div class="image-box">
             <img src="./assets/imagenes/alan2.png" alt="Alan Avila UX Designer">
@@ -54,35 +60,44 @@
     <div class="bottom-decoration"></div>
 </section>
 
+<section class="projects-section" id="proyectos">
+    <h2 class="projects-title">Proyectos</h2>
     
-    
-    
-        <section>
-            <!-- seccion con slicer vertical -->
-            <h1 align="center"> proyectos</h1>
-    
-            <table align="center" cellpadding="10">
-                <tr>
-                 
-                    <td align="center">
-                        <img src="./assets/imagenes/image 2.png " width="150">
-                    </td>
-    
-                    <td align="center">
-                        <img src="./assets/imagenes/image 2.png" width="300"><br>
-                        <strong>Plataforma educativa</strong><br><br>
-                        Proin quis cras euismod sit amet metus risus ut...
-                    </td>
-    
-                    <td align="center">
-                        <img src="./assets/imagenes/image 2.png" width="150">
-                    </td>
-                </tr>
-            </table>
-        </section>
+    <div class="slider-wrapper">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
 
+        <div class="slider-container">
+            <article class="project-slide slide-1">
+                <div class="project-image">
+                   <a href="./assets/PDF/modulo 5 grupo 3.pdf"> <img src="./assets/imagenes/image 2.png" alt="Plataforma Educativa"></a>
+                </div>
+                <div class="project-info">
+                    <h3>Plataforma educativa</h3>
+                    <p>Proin quis cras euismod sit et metus risus ut. Semper nam vel morbi sit cursus tincidunt massa et a. Dolor odio parturient cursus justo nunc enim, a, sit facilisi.</p>
+                </div>
+            </article>
+
+            <article class="project-slide slide-2">
+                <div class="project-image">
+                    <a href="./assets/PDF/Plataforma  UX4ALL Grupo 2.pdf"> <img src="./assets/imagenes/ux4all.png" alt="Otro Proyecto"></a>
+                </div>
+                <div class="project-info">
+                    <h3>UX4ALL</h3>
+                    <p>Descripción detallada de tu segundo proyecto siguiendo la misma línea estética de UX y diseño interactivo.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="nav-arrows">
+            <label for="slide2" class="arrow next">&#10095;</label>
+            <label for="slide1" class="arrow prev">&#10094;</label>
+        </div>
+    </div>
+</section>
     
-    <section class="skills-section">
+    <section class="skills-section" id="Habilidades">
     <h2 class="skills-title">Habilidades</h2>
     
     <div class="skills-container">
@@ -106,7 +121,7 @@
            
             
 
-        <section class="certs-section">
+        <section class="certs-section" id="certificaciones">
     <h2 class="certs-title">Certificaciones</h2>
     
     <div class="certs-container">
@@ -169,7 +184,7 @@
 </section>
 
 
-<section class="contact-section">
+<section class="contact-section" id="contacto">
     <h2 class="contact-title">Contactame</h2>
     
     <div class="contact-container">
