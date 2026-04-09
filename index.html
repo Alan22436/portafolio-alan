@@ -4,55 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPUQDvDUxFShoWWbHougyHjr0tFz3E38fX8e0bnTUpya-P0mXW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
     <title>Portafolio Alan Avila</title>
 
 </head>
 
 <body>
 
-    <header>
-
-        <nav>
-            <ul align="center">
-                <li style="display:inline;">
-                    <h2>Alan Avila</h2>
-                </li>
-                <li> <a href="#sobre mi">
-                        <h3>sobre mi</h3>
-                    </a> 
-                </li>
-                <li> <a href="#proyectos">
-                        <h3>proyectos</h3>
-                    </a> 
-                </li>
-                <li> <a href="#certificaciuones">
-                        <h3>certificaciones</h3>
-                    </a> 
-                </li>
-                <li> <a href="#contacto">
-                        <h3>contacto</h3>
-                    </a> 
-                </li>
-            </ul>
-        </nav>
-    </header>
-
+   <header class="main-header">
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-brand">
+                <a href="#">Alan Avila</a>
+            </li>
+            
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#certificaciones">Certificaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
-        <section align="center">
+        <section>
     
+    <section class="hero-section">
+    <div class="container">
+        <div class="image-box">
+            <img src="./assets/imagenes/alan2.png" alt="Alan Avila UX Designer">
+        </div>
+        
+        <div class="content-box">
+            <span class="greeting">Hola! soy</span>
+            <h1 class="pixel-title">Alan Avila</h1>
+            <p class="description">
+                Diseñador UX con enfoque en ludificación, aplicando mecánicas 
+                de juego para mejorar la interacción y retención de usuarios. 
+                Experiencia en desarrollo de productos digitales, combinando 
+                diseño, programación y visión de negocio.
+            </p>
+        </div>
+    </div>
     
-            <img src="./assets/imagenes/alan2.png" 
-            height="200px" width="350" alt="caricatura de alan">
-            <h2> Hola! soy </h2>
-            <h1> Alan Avila </h1>
-            <br>
-            <h3> Diseñador UX con enfoque en ludificación, aplicando mecánicas de
-                juego para mejorar la interacción y retención de usuarios.<br> Experiencia
-                en desarrollo de productos digitales, combinando diseño, programación y
-                visión de negocio.
-            </h3>
-        </section>
+    <div class="bottom-decoration"></div>
+</section>
+
     
     
     
@@ -80,130 +81,145 @@
             </table>
         </section>
 
-        </section>
-
-        <section>
     
+    <section class="skills-section">
+    <h2 class="skills-title">Habilidades</h2>
+    
+    <div class="skills-container">
+        <article class="skill-card">
+            <img src="./assets/imagenes/Programas.png" alt="Unity">
+        </article>
+
+        <article class="skill-card">
+            <img src="./assets/imagenes/Programas (2).png" alt="HTML5">
+        </article>
+
+        <article class="skill-card">
+            <img src="./assets/imagenes/Programas (3).png" alt="Figma">
+        </article>
+
+        <article class="skill-card">
+            <img src="./assets/imagenes/Programas (1).png" alt="Blender">
+        </article>
+    </div>
+</section>
            
-                <h1 align="center">habilidades</h1>
-                <table align="center" cellpadding="10">
-                    <tr>
-                        <td><img src="./assets/imagenes/Programas.png" width="50"></td>
-                        <td><img src="./assets/imagenes/Programas (2).png" width="50"></td>
-                        <td><img src="./assets/imagenes/Programas (3).png" width="50"></td>
-                        <td><img src="./assets/imagenes/Programas (1).png" width="50"></td>
-                    </tr>
-                </table>
-        </section>
+            
 
-        <section>
-            <h1> Certificaciones </h1>
-            <table border="1" cellpadding="20" align="center">
-                <tr>
-                    <td align="center">
-                        <img src="./assets/imagenes/Frame.png" width="60"><br><br>
-                        <strong>Programación</strong><br><br>
-                        <h3>
-                            Desarrollo de soluciones digitales mediante código,
-                            abarcando lógica, estructuras y optimización.
-                            Experiencia en implementación de sistemas interactivos y
-                            resolución de problemas técnicos.
-                        </h3>
-                    </td>
-                    <td align="center">
-                        <img src="./assets/imagenes/Frame (1).png" width="60"><br><br>
-                        <strong>Diseño de Videojuegos</strong><br><br>
-                        <h3>
-                            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADiseño y desarrollo de experiencias interactivas
-                            centradas en la jugabilidad, narrativa y sistemas.
-                            Enfoque en mecánicas, prototipado y creación de mundos
-                            digitales funcionales.
-                        </h3>
-                    </td>
-                    <td align="center">
-                        <img src="./assets/imagenes/image 5.png" width="60"><br><br>
-                        <strong>UX/UI</strong><br><br>
-                        <h3>
-                            Diseño de interfaces centradas en el usuario,
-                            combinando usabilidad, estética y funcionalidad.
-                            Creación de experiencias intuitivas mediante
-                            investigación, prototipado y testing.
-                        </h3>
-                    </td>
-                    <td align="center">
-                        <img src="./assets/imagenes/logo-secotec 1.png" width="60"><br><br>
-                        <strong>Modelo de Negocio</strong><br><br>
-                        <h3>
-                            Formación en creación de empresas, identidad de marca y
-                            propuesta de valor, aportando una base para comprender objetivos
-                            de negocio y diseñar soluciones alineadas desde UX.
-                        </h3>
-                    </td>
-                </tr>
-            </table>
-        </section>
+        <section class="certs-section">
+    <h2 class="certs-title">Certificaciones</h2>
+    
+    <div class="certs-container">
+        <article class="cert-card">
+            <div class="cert-image-container">
+                <img src="./assets/imagenes/logo-instituto-comercial.png" alt="Instituto Comercial Valdivia - Logo" class="cert-logo">
+            </div>
+            <div class="cert-content">
+                <h3>Programación</h3>
+                <p>
+                    Desarrollo de soluciones digitales mediante código, abarcando lógica, 
+                    estructuras y optimización. Experiencia en implementación de sistemas 
+                    interactivos y resolución de problemas técnicos.
+                </p>
+            </div>
+        </article>
+
+        <article class="cert-card">
+            <div class="cert-image-container">
+                <img src="./assets/imagenes/logo-santo-tomas.png" alt="Santo Tomás - Logo" class="cert-logo">
+            </div>
+            <div class="cert-content">
+                <h3>Diseño de Videojuegos</h3>
+                <p>
+                    Diseño y desarrollo de experiencias interactivas centradas en la jugabilidad, 
+                    narrativa y sistemas. Enfoque en mecánicas, prototipado y creación de mundos 
+                    digitales funcionales.
+                </p>
+            </div>
+        </article>
+
+        <article class="cert-card">
+            <div class="cert-image-container">
+                <img src="./assets/imagenes/logo-sence.png" alt="SENCE - Logo" class="cert-logo">
+            </div>
+            <div class="cert-content">
+                <h3>UX/UI</h3>
+                <p>
+                    Diseño de interfaces centradas en el usuario, combinando usabilidad, estética y 
+                    funcionalidad. Creación de experiencias intuitivas mediante investigación, 
+                    prototipado y testing.
+                </p>
+            </div>
+        </article>
+
+        <article class="cert-card">
+            <div class="cert-image-container">
+                <img src="./assets/imagenes/logo-sercotec.png" alt="SERCOTEC - Logo" class="cert-logo">
+            </div>
+            <div class="cert-content">
+                <h3>Modelo de Negocio</h3>
+                <p>
+                    Formación en creación de empresas, identidad de marca y propuesta de valor, 
+                    aportando una base para comprender objetivos de negocio y diseñar soluciones 
+                    alineadas desde UX.
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
 
 
-<section>
-    <h2 align="center">Contáctame</h2>
-    <form>
-        <table align="center" cellpadding="10">
-            <tr>
-                <td>
-                    <input type="text" name="nombre" placeholder="Nombre" size="30">
-                </td>
-                <td>
-                    <input type="text" name="apellido" placeholder="Apellido" size="30">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="email" name="email" placeholder="Email" size="30">
-                </td>
-                <td>
-                    <input type="text" name="telefono" placeholder="Teléfono" size="30">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <select name="asunto" style="width:100%;">
-                        <option>Asunto</option>
-                        <option>Consulta</option>
-                        <option>Trabajo</option>
-                        <option>Otro</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <textarea name="mensaje" rows="5" cols="65" placeholder="Mensaje"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <button type="submit">Enviar</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+<section class="contact-section">
+    <h2 class="contact-title">Contactame</h2>
+    
+    <div class="contact-container">
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-grid">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="telefono" placeholder="Telefono">
+                
+                <select name="asunto" class="full-width">
+                    <option value="" disabled selected>Asunto</option>
+                    <option value="proyectos">Proyectos</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="otros">Otros</option>
+                </select>
+                
+                <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." class="full-width"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </div>
 </section>
     </main>
 
-<footer>
-  <table width="100%" >
-    <tr>
-      <td align="center">
-        <p>© 2026 - Alan Avila</p>
-        <a href="https://www.instagram.com/
-        fenrirsnow3d?utm_source=ig_web_button_share_s
-        heet&igsh=ZDNlZDc0MzIxNw==">Instagram</a> |
-        <a href="https://www.linkedin.com/
-        in/alan-avila-01b0aa36a/">LinkedIn</a> |
-        <a href="https://www.tiktok.com/
-        @fenrirsnow?_r=1&_t=ZS-95NHeQ5KlE5">TikTok</a>
-      </td>
-    </tr>
-  </table>
+<footer class="main-footer">
+    <div class="footer-container">
+        <p class="footer-copy">2026 Alan Avila.</p>
+        
+        <address class="footer-socials">
+            <ul class="social-links">
+                <li>
+                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/tu-usuario" target="_blank" rel="noopener">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tiktok.com/@tu-usuario" target="_blank" rel="noopener">
+                        TikTok
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </div>
 </footer>
 
 </body>
