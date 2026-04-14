@@ -779,3 +779,63 @@ input[name="slider"] { display: none; }
         flex: 1 1 100%; /* En celular, todo ocupa el 100% */
     }
 }
+.case-dashboard {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: flex-start; /* Para que no se estiren raro */
+}
+
+.dashboard-main {
+    flex: 2; /* Ocupa más espacio (el lado de la descripción) */
+    background: rgba(26, 11, 46, 0.4); /* El color oscuro de tu captura */
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #8c52ff33;
+}
+
+.dashboard-side {
+    flex: 1; /* Ocupa menos espacio (el lado de las tarjetas) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stats-card, .tech-card {
+    background: rgba(26, 11, 46, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #8c52ff33;
+}
+
+/* Formato de las métricas (8h y 100%) */
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #8c52ff; /* Tu morado */
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 0.7rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 900px) {
+    .case-dashboard {
+        flex-direction: column; /* En celular, uno abajo del otro */
+    }
+}
