@@ -35,8 +35,10 @@
             <li><a href="#sobre-mi">Sobre mi</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#Habilidades">Habilidades</a></li>
+            <li><a href="#ux-case">Caso de estudio</a></li>
             <li><a href="#certificaciones">Certificaciones</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            
         </ul>
     </header>
 
@@ -64,46 +66,72 @@
             <div class="bottom-decoration"></div>
         </section>
 
-        <section class="projects-section" id="proyectos">
-            <h2 class="projects-title">Proyectos</h2>
+       <section class="projects-section" id="proyectos">
+    <h2 class="projects-title">Proyectos</h2>
 
-            <div class="slider-wrapper">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
+    <div class="slider-wrapper">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
 
-                <div class="slider-container">
-                    <article class="project-slide slide-1">
-                        <div class="project-image">
-                            <a href="./assets/PDF/modulo 5 grupo 3.pdf"> <img src="./assets/imagenes/image 2.png"
-                                    alt="Plataforma Educativa"></a>
-                        </div>
-                        <div class="project-info">
-                            <h3>Plataforma educativa</h3>
-                            <p>Proin quis cras euismod sit et metus risus ut. Semper nam vel morbi sit cursus tincidunt
-                                massa et a. Dolor odio parturient cursus justo nunc enim, a, sit facilisi.</p>
-                        </div>
-                    </article>
-
-                    <article class="project-slide slide-2">
-                        <div class="project-image">
-                            <a href="./assets/PDF/Plataforma UX4ALL Grupo 2.pdf"> <img
-                                    src="./assets/imagenes/ux4all.png" alt="Otro Proyecto"></a>
-                        </div>
-                        <div class="project-info">
-                            <h3>UX4ALL</h3>
-                            <p>Descripción detallada de tu segundo proyecto siguiendo la misma línea estética de UX y
-                                diseño interactivo.</p>
-                        </div>
-                    </article>
+        <div class="slider-container">
+            <article class="project-slide">
+                <div class="project-image">
+                    <a href="./assets/PDF/modulo 5 grupo 3.pdf"> 
+                        <img src="./assets/imagenes/Portada edu.png" alt="Plataforma Educativa">
+                    </a>
                 </div>
-
-                <div class="nav-arrows">
-                    <label for="slide2" class="arrow next">&#10095;</label>
-                    <label for="slide1" class="arrow prev">&#10094;</label>
+                <div class="project-info">
+                    <h3>Plataforma educativa</h3>
+                    <p>Desarrollo de una plataforma educativa que se apegue a los estándares de UX y UI siendo orientada en el usuario, intuitiva, y responsiva.</p>
                 </div>
-            </div>
-        </section>
+            </article>
+
+            <article class="project-slide">
+                <div class="project-image">
+                    <a href="./assets/PDF/Proyecto Módulo 2 Grupo II Curso UXUI.pdf"> 
+                        <img src="./assets/imagenes/portada uber.png" alt="Investigación Uber">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Investigación UX "Uber"</h3>
+                    <p>Aplicación de los métodos y herramientas para la investigación UX: benchmarking, entrevistas y encuestas, enfocadas en la aplicación Uber.</p>
+                </div>
+            </article>
+
+            <article class="project-slide">
+                <div class="project-image">
+                    <a href="./assets/PDF/Proyecto Módulo 4 Grupo 3.pdf"> 
+                        <img src="./assets/imagenes/portada redi.png" alt="Rediseño Interfaz">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Rediseño de Interfaz</h3>
+                    <p>Aplicación de técnicas de diseño visual y prototipado para la optimización de flujos de usuario en plataformas móviles.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="nav-arrows s1-arrows">
+            <label for="slide3" class="arrow prev">&#10094;</label>
+            <label for="slide2" class="arrow next">&#10095;</label>
+        </div>
+        <div class="nav-arrows s2-arrows">
+            <label for="slide1" class="arrow prev">&#10094;</label>
+            <label for="slide3" class="arrow next">&#10095;</label>
+        </div>
+        <div class="nav-arrows s3-arrows">
+            <label for="slide2" class="arrow prev">&#10094;</label>
+            <label for="slide1" class="arrow next">&#10095;</label>
+        </div>
+
+        <div class="slider-controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+        </div>
+    </div>
+</section>
 
         <section class="skills-section" id="Habilidades">
             <h2 class="skills-title">Habilidades</h2>
@@ -127,8 +155,45 @@
             </div>
         </section>
 
+<section class="case-study-section" id="ux-case">
+    <div class="case-content-wrapper">
+        <h2 class="case-main-title">Caso de Estudio UX</h2>
+        
+        <div class="case-img-container">
+            <img src="./assets/imagenes/UX4ALL PORTADA.png" alt="UX4ALL">
+        </div>
 
+        <div class="case-dashboard">
+            <div class="dashboard-main">
+                <h3 class="case-brand">UX4ALL</h3>
+                <p><strong>Actividad:</strong> Rediseño de interfaz para sistema educativo gamificado.</p>
+                <hr class="case-divider">
+                <h4>El Desafío</h4>
+                <p>Crear una experiencia educativa accesible que evitara la sobrecarga cognitiva...</p>
+                <h4>Solución Propuesta</h4>
+                <p>Implementación de un diseño centrado en el usuario con una jerarquía visual clara...</p>
+            </div>
 
+            <div class="dashboard-side">
+                <div class="stats-card">
+                    <h4>Métricas de Impacto</h4>
+                    <div class="stats-row">
+                        <div class="stat-box"><span>8h</span><p>TIEMPO DE RESOLUCIÓN</p></div>
+                        <div class="stat-box"><span>100%</span><p>RESPONSIVO</p></div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h4>Ficha Técnica</h4>
+                    <ul>
+                        <li><span>Herramienta:</span> Figma</li>
+                        <li><span>Skills:</span> Heurísticas, Wireframing, investigación UX</li>
+                        <li><span>Aprendizaje:</span> Iteración centrada en el usuario</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <section class="certs-section" id="certificaciones">
             <h2 class="certs-title">Certificaciones</h2>
 
@@ -193,31 +258,34 @@
         </section>
 
 
-        <section class="contact-section" id="contacto">
-            <h2 class="contact-title">Contactame</h2>
-
-            <div class="contact-container">
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-grid">
-                        <input type="text" name="nombre" placeholder="Nombre" required>
-                        <input type="text" name="apellido" placeholder="Apellido" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="tel" name="telefono" placeholder="Telefono">
-
-                        <select name="asunto" class="full-width">
-                            <option value="" disabled selected>Asunto</option>
-                            <option value="proyectos">Proyectos</option>
-                            <option value="colaboracion">Colaboración</option>
-                            <option value="otros">Otros</option>
-                        </select>
-
-                        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." class="full-width"></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Enviar</button>
-                </form>
+       <section class="contact-section" id="contacto">
+    <div class="container">
+        <h2 class="skills-title">Contactame</h2>
+        
+        <form action="https://formspree.io/f/mnjoenvj" method="POST" class="contact-form">
+            <div class="form-grid">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="telefono" placeholder="Telefono">
+                
+                <select name="asunto" class="full-width">
+                    <option value="" disabled selected>Asunto</option>
+                    <option value="proyecto">Nuevo Proyecto</option>
+                    <option value="empleo">Oferta de Empleo</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <textarea name="mensaje" class="full-width" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
             </div>
-        </section>
+            
+            <div class="form-action">
+                <button type="submit" class="btn-send">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer class="main-footer">
@@ -227,17 +295,17 @@
             <address class="footer-socials">
                 <ul class="social-links">
                     <li>
-                        <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">
+                        <a href="https://www.linkedin.com/in/alan-avila-01b0aa36a/" target="_blank" rel="noopener">
                             LinkedIn
                         </a>
                     </li>
                     <li>
-                        <a href="https://instagram.com/tu-usuario" target="_blank" rel="noopener">
+                        <a href="https://www.instagram.com/fenrirsnow/?hl=es" target="_blank" rel="noopener">
                             Instagram
                         </a>
                     </li>
                     <li>
-                        <a href="https://tiktok.com/@tu-usuario" target="_blank" rel="noopener">
+                        <a href="https://www.tiktok.com/@fenrirsnow?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">
                             TikTok
                         </a>
                     </li>
