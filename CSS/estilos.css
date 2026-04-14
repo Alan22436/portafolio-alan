@@ -838,4 +838,44 @@ input[name="slider"] { display: none; }
     .case-dashboard {
         flex-direction: column; /* En celular, uno abajo del otro */
     }
+}.why-chosen-container {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.why-chosen-card {
+    background: linear-gradient(145deg, rgba(35, 15, 63, 0.6), rgba(26, 11, 46, 0.4));
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(140, 82, 255, 0.3); /* Un poco más brillante para destacar */
+    position: relative;
+    overflow: hidden;
+}
+
+.why-chosen-card h4 {
+    color: #8c52ff;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.why-chosen-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+/* Decoración opcional para que se vea más profesional */
+.why-chosen-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 100px;
+    height: 200%;
+    background: rgba(140, 82, 255, 0.05);
+    transform: rotate(45deg);
+    pointer-events: none;
 }
